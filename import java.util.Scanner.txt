@@ -1,0 +1,136 @@
+import java.util.Scanner;
+class scanner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter the elemnts of the array:");
+        for(int i = 0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int temp;
+        for(int i=0,j=(size/2)-1;i<size/4;i++,j--) {
+            temp=array[i];
+            array[i]=array[j-i];
+            array[j-i]=temp;
+        }
+        for(int i=0;i<size;i++) System.out.print(array[i]+" ");
+    }
+}
+
+
+import java.util.Scanner;
+class scanner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter the elemnts of the array:");
+        for(int i = 0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int temp;
+        for(int i=0;i<size/2;i++) {
+            temp=array[i];
+            array[i]=array[size-1-i];
+            array[size-1-i]=temp;
+        }
+        for(int i=0;i<size;i++) System.out.print(array[i]+" ");
+    }
+}
+
+(wrong undi)
+import java.util.Scanner;
+class scanner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter the elemnts of the array:");
+        for(int i = 0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int temp;
+        for(int i=size/2,j=size-1,k=0;k<size/4;i++,j--,k++) {
+            temp=array[i];
+            array[i]=array[j-k];
+            array[j-k]=temp;
+        }
+        for(int i=0;i<size;i++) System.out.print(array[i]+" ");
+    }
+}
+
+import java.util.Scanner; 
+public class main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter the elemnts of the array:");
+        for(int i = 0;i<size;i++){
+            array[i]=scanner.nextInt();}
+            for(int i=0;i<size;i++){
+                if(i%2==0)
+                {
+                    System.out.print(array[i]+" ");
+                }
+            }
+    }  
+            
+}
+
+
+
+import java.util.Scanner; 
+public class main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter the size of array:");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("enter the elemnts of the array:");
+        for(int i = 0;i<size;i++){
+            array[i]=scanner.nextInt();
+        }
+        int[]hash=new int[10];
+        for(int i=0;i<size;i++){
+            hash[array[i]]++;
+        }
+        for(int i=0;i<0;i++){
+             System.out.println(i+" - "+hash[i]);
+        }
+    }
+}
+
+
+0 to 5
+#include <stdio.h>
+
+int fun(int x){
+    if(x==0)
+    return 0;
+    fun(x-1);
+    printf("%d\t",x);
+   
+}
+int main(){
+    fun (5);
+}
+
+
+5 to 0
+#include <stdio.h>
+
+int fun(int x){
+    if(x==0)
+    return 0;
+    printf("%d\t",x);
+    fun(x-1);
+}
+int main(){
+    fun (5);
+}
